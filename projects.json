@@ -1,0 +1,20 @@
+[
+    {
+      "title": "Ad Click Prediction",
+      "description": "A machine learning project predicting ad click behavior using user and product data.",
+      "duration": "27/11/2024 – 03/12/2024",
+      "link": "https://github.com/samet0demir/ad-click-prediction"
+    },
+    {
+      "title": "Taxi Company Analysis",
+      "description": "A data analysis project comparing two taxi companies.",
+      "duration": "23/11/2024 – 25/11/2024",
+      "link": "https://github.com/samet0demir/Company_Analysis"
+    },
+    {
+      "title": "Post-Earthquake Aid Distribution Optimization",
+      "description": "Developed a prioritization model to optimize post-earthquake aid distribution by analyzing factors like ground conditions, population density, and building age. Utilized data analytics and decision support systems for effective disaster management.",
+      "duration": "08/10/2024 – CURRENT"
+    }
+  ]
+  

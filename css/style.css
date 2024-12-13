@@ -92,9 +92,3 @@ footer {
     background: #333;
     color: #fff;
 }
-
-/* Styling for project durations */
-section ul li p strong {
-    font-weight: bold;
-    color: #333;
-}

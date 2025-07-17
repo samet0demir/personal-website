@@ -1,20 +1,26 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    line-height: 1.7;
+    background-color: #f8f9fa;
+    color: #343a40;
 }
 
 /* Header Styles */
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px 10px;
+    background: #ffffff;
+    color: #343a40;
+    padding: 20px 40px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #e9ecef;
+}
+
+header h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 header nav ul {
@@ -26,69 +32,192 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #495057;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #aaa;
+    color: #007bff;
 }
 
 /* Section Styles */
 section {
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #212529;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 /* Profile Photo Styling */
 .profile-photo {
     display: block;
-    margin: 20px auto;
+    margin: 0 auto 30px auto;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    border: 3px solid #333;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 5px solid #e9ecef;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* About Me Section */
+#about p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Project Case Study Styles */
+.project-card {
+    background-color: #fdfdff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-top: 0;
+}
+
+.project-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-left: 3px solid #007bff;
+    padding-left: 10px;
+}
+
+.project-duration {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+
+.technologies .tech-tag {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    margin-right: 8px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.project-link {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+
+/* Certificates Section */
+#certificates ul {
+    list-style: none;
+    padding: 0;
+}
+
+#certificates li {
+    background: #fdfdff;
+    border-left: 4px solid #28a745;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+#certificates h3 {
+    margin: 0 0 5px 0;
+    color: #212529;
 }
 
 /* Contact Section */
 #contact p {
-    margin: 10px 0;
-    font-size: 1rem;
-    color: #333;
+    margin: 15px 0;
+    font-size: 1.1rem;
 }
 
 #contact a {
-    color: #0073b1;
+    color: #007bff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #005582;
+    color: #0056b3;
     text-decoration: underline;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
+    padding: 20px 0;
+    background: #343a40;
+    color: #f8f9fa;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .project-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-link {
+        margin-top: 15px;
+    }
 }

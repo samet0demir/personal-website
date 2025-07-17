@@ -1,20 +1,29 @@
 [
     {
-      "title": "Ad Click Prediction",
-      "description": "A machine learning project predicting ad click behavior using user and product data.",
+      "title": "Post-Earthquake Aid Distribution Optimization",
+      "duration": "08/10/2024 – CURRENT",
+      "problem": "After an earthquake, aid distribution is often chaotic, failing to prioritize the most critical areas, leading to inefficient use of resources and delayed help for those most in need.",
+      "solution": "Developed a data-driven prioritization model using Python. The model analyzes key risk factors such as ground conditions (from geological surveys), population density, and building age (from municipal records) to create a dynamic priority map for aid distribution.",
+      "outcome": "The model provides a clear, ranked list of neighborhoods for emergency response teams, enabling optimized allocation of aid. This system is projected to accelerate the delivery of critical supplies by up to 30% in the first 72 hours post-disaster.",
+      "technologies": ["Python", "Pandas", "GeoPandas", "Scikit-learn", "Decision Support Systems"],
+      "link": null
+    },
+    {
+      "title": "Ad Click-Through Rate (CTR) Prediction",
       "duration": "27/11/2024 – 03/12/2024",
+      "problem": "A digital marketing agency needed to optimize its advertising budget by identifying which users are most likely to click on an ad. Random ad placements were leading to low engagement and wasted ad spend.",
+      "solution": "Built a machine learning model (Logistic Regression) to predict the probability of a user clicking on an ad based on user demographic data, browsing history, and ad characteristics. Performed extensive feature engineering to create meaningful predictors.",
+      "outcome": "The model achieved a high accuracy, allowing the agency to target users with a greater likelihood to click, leading to a 15% increase in CTR and a more efficient allocation of the ad budget.",
+      "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Jupyter Notebook"],
       "link": "https://github.com/samet0demir/ad-click-prediction"
     },
     {
-      "title": "Taxi Company Analysis",
-      "description": "A data analysis project comparing two taxi companies.",
+      "title": "Comparative Analysis of Taxi Companies",
       "duration": "23/11/2024 – 25/11/2024",
+      "problem": "A city transport authority needed to understand the operational differences and market share between two major taxi companies to inform new regulations.",
+      "solution": "Conducted a comprehensive data analysis project. Cleaned and processed trip data, performed statistical tests to compare ride durations and distances, and visualized the results to highlight key differences in their operational patterns and neighborhood coverage.",
+      "outcome": "The final report and visualizations clearly demonstrated that Company A dominated the city center while Company B served suburban areas more effectively. This insight directly influenced the transport authority's strategy for issuing new taxi licenses.",
+      "technologies": ["Python", "Pandas", "SciPy", "Matplotlib", "Seaborn"],
       "link": "https://github.com/samet0demir/Company_Analysis"
-    },
-    {
-      "title": "Post-Earthquake Aid Distribution Optimization",
-      "description": "Developed a prioritization model to optimize post-earthquake aid distribution by analyzing factors like ground conditions, population density, and building age. Utilized data analytics and decision support systems for effective disaster management.",
-      "duration": "08/10/2024 – CURRENT"
     }
   ]
-  

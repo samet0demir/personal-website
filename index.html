@@ -3,60 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Samet Demir - AI Enthusiast, Data Scientist, and Problem Solver. Explore my portfolio showcasing innovative AI and data science projects.">
+    <meta name="keywords" content="AI, Data Science, Machine Learning, Portfolio, Samet Demir">
+    <meta name="author" content="Samet Demir">
+    <meta property="og:title" content="Samet Demir | AI & Data Science Portfolio">
+    <meta property="og:description" content="AI Enthusiast, Data Scientist, and Problem Solver">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sametdemir.com">
     <title>Samet Demir | AI & Data Science Portfolio</title>
+    
+    <!-- Preload fonts for better performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Loading animation -->
+    <div id="loading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
     <header>
-        <h1>Samet Demir</h1>
-        <p>AI Enthusiast | Data Scientist | Problem Solver</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>Samet Demir</h1>
+            <p>AI Enthusiast | Data Scientist | Problem Solver</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="images/profil.jpg" alt="Profile Photo of Samet Demir" class="profile-photo">
-        <p>
-            I am a final-year Management Information Systems student at Karadeniz Technical University with a deep-seated passion for Artificial Intelligence and Data Science. My journey is driven by a desire to leverage data to solve complex, real-world problems. I thrive on transforming raw data into actionable insights and building intelligent systems that create measurable impact.
-            <br><br>
-            My academic and project work has equipped me with a strong foundation in machine learning, data analysis, and model development. I am not just interested in the 'how' of building algorithms, but the 'why'—understanding the business context and ensuring that my solutions deliver tangible value. I am actively seeking opportunities where I can contribute to innovative projects and continue to grow in a collaborative, data-driven environment.
-        </p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/profil.jpg" alt="Profile Photo of Samet Demir" class="profile-photo">
+                <div class="about-text">
+                    <p>
+                        I am a final-year Management Information Systems student at Karadeniz Technical University with a deep-seated passion for Artificial Intelligence and Data Science. My journey is driven by a desire to leverage data to solve complex, real-world problems. I thrive on transforming raw data into actionable insights and building intelligent systems that create measurable impact.
+                    </p>
+                    <p>
+                        My academic and project work has equipped me with a strong foundation in machine learning, data analysis, and model development. I am not just interested in the 'how' of building algorithms, but the 'why'—understanding the business context and ensuring that my solutions deliver tangible value. I am actively seeking opportunities where I can contribute to innovative projects and continue to grow in a collaborative, data-driven environment.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Project Case Studies</h2>
-        <div id="project-list">
-            <!-- Projects will be dynamically loaded here as case studies -->
-        </div>
-    </section>
+        <section id="projects">
+            <h2>Project Case Studies</h2>
+            <div id="project-list">
+                <!-- Projects will be dynamically loaded here as case studies -->
+            </div>
+        </section>
 
-    <section id="certificates">
-        <h2>Certificates</h2>
-        <ul id="certificate-list">
-            <!-- Certificates will be dynamically loaded here -->
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:demirsamett11@gmail.com">demirsamett11@gmail.com</a></p>
-        <p>Phone: <a href="tel:+905376874155">+90 537 687 41 55</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/samet-demir-942b22233/" target="_blank">linkedin.com/in/samet-demir</a></p>
-        <p>GitHub: <a href="https://github.com/samet0demir" target="_blank">github.com/samet0demir</a></p>
-    </section>
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <ul id="certificate-list">
+                <!-- Certificates will be dynamically loaded here -->
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <p>Email: <a href="mailto:demirsamett11@gmail.com">demirsamett11@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <p>Phone: <a href="tel:+905376874155">+90 537 687 41 55</a></p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">💼</span>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/samet-demir-942b22233/" target="_blank">linkedin.com/in/samet-demir</a></p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🐙</span>
+                    <p>GitHub: <a href="https://github.com/samet0demir" target="_blank">github.com/samet0demir</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; <span id="footer-year">2024</span> Samet Demir</p>
+        <div class="footer-content">
+            <p>&copy; <span id="footer-year">2024</span> Samet Demir. All rights reserved.</p>
+            <p class="footer-subtitle">Built with ❤️ and modern web technologies</p>
+        </div>
     </footer>
 
     <script src="app.js"></script>

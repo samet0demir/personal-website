@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: samet0demir/personal-website   # GitHub kullanıcıadın / repo adı
+  branch: main                        # ana branch adını kontrol et (main mi master mı)
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projeler"
+    files:
+      - file: "projects.json"
+        label: "Tüm Projeler"
+        name: "projects"
+        fields:
+          - label: "Projeler Listesi"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Görsel", name: "image", widget: "image" }

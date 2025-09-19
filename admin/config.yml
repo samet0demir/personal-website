@@ -18,7 +18,15 @@ collections:
             name: "projects"
             widget: "list"
             fields:
-              - { label: "Başlık", name: "title", widget: "string" }
-              - { label: "Açıklama", name: "description", widget: "text" }
-              - { label: "Link", name: "link", widget: "string" }
-              - { label: "Görsel", name: "image", widget: "image" }
+              - label: "Başlık"
+                name: "title"
+                widget: "string"
+              - label: "Açıklama"
+                name: "description"
+                widget: "text"
+              - label: "Link"
+                name: "link"
+                widget: "string"
+              - label: "Görsel"
+                name: "image"
+                widget: "image"

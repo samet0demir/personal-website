@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
-  repo: samet0demir/personal-website   # GitHub kullanıcıadın / repo adı
-  branch: main                        # ana branch adını kontrol et (main mi master mı)
+  repo: samet0demir/personal-website
+  branch: main
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -20,4 +20,22 @@ collections:
             fields:
               - label: "Başlık"
                 name: "title"
+                widget: "string"
+              - label: "Süre"
+                name: "duration"
+                widget: "string"
+              - label: "Problem"
+                name: "problem"
+                widget: "text"
+              - label: "Çözüm"
+                name: "solution"
+                widget: "text"
+              - label: "Sonuç"
+                name: "outcome"
+                widget: "text"
+              - label: "Teknolojiler"
+                name: "technologies"
+                widget: "list"
+              - label: "Link"
+                name: "link"
                 widget: "string"

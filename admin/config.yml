@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: samet0demir/personal-website   # GitHub kullanıcıadın / repo adı
   branch: main                        # ana branch adını kontrol et (main mi master mı)
 

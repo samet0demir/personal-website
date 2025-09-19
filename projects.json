@@ -6,8 +6,14 @@
       "problem": "Ahead of the anticipated major Marmara earthquake, existing risk maps are often too broad, remaining at the city or district level. This makes it difficult for local response teams to allocate resources to the most critical neighborhoods. A data-driven, quantitative prioritization system at the neighborhood level is missing.",
       "solution": "I developed a machine learning model using Python and Scikit-learn on earthquake scenario data from the Istanbul Metropolitan Municipality (IMM), which included soil conditions, building inventory, and population data. To overcome the challenges of a small dataset (n=10 neighborhoods), I applied Leave-One-Out Cross-Validation (LOOCV) and regularized regression methods (Ridge, Lasso). One of the most critical steps was identifying and addressing the 'target leakage' problem, which significantly improved the model's interpretability and reliability.",
       "outcome": "The model generated casualty estimates for Avcılar's 10 neighborhoods, providing a clear ranking of the highest-risk areas (Cihangir, Denizköşkler, Ambarlı). The leakage-free analysis revealed that the true key factors influencing casualties are Peak Ground Velocity (PGV), soil conditions (Vs30), and the number of heavily damaged buildings. These outputs provide a science-based decision support tool for emergency teams to use in their search-and-rescue and resource allocation planning.",
-      "technologies": ["Python", "Pandas", "Regression Analysis", "Scikit-learn", "Decision Support Systems"],
-      "link": null
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Regression Analysis",
+        "Scikit-learn",
+        "Decision Support Systems"
+      ],
+      "link": "-"
     },
     {
       "title": "Ad Click-Through Rate (CTR) Prediction",
@@ -15,7 +21,13 @@
       "problem": "A digital marketing agency needed to optimize its advertising budget by identifying which users are most likely to click on an ad. Random ad placements were leading to low engagement and wasted ad spend.",
       "solution": "Built a machine learning model (Logistic Regression) to predict the probability of a user clicking on an ad based on user demographic data, browsing history, and ad characteristics. Performed extensive feature engineering to create meaningful predictors.",
       "outcome": "The model achieved a high accuracy, allowing the agency to target users with a greater likelihood to click, leading to a 15% increase in CTR and a more efficient allocation of the ad budget.",
-      "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Jupyter Notebook"],
+      "technologies": [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "Matplotlib",
+        "Jupyter Notebook"
+      ],
       "link": "https://github.com/samet0demir/ad-click-prediction"
     },
     {
@@ -24,8 +36,25 @@
       "problem": "A city transport authority needed to understand the operational differences and market share between two major taxi companies to inform new regulations.",
       "solution": "Conducted a comprehensive data analysis project. Cleaned and processed trip data, performed statistical tests to compare ride durations and distances, and visualized the results to highlight key differences in their operational patterns and neighborhood coverage.",
       "outcome": "The final report and visualizations clearly demonstrated that Company A dominated the city center while Company B served suburban areas more effectively. This insight directly influenced the transport authority's strategy for issuing new taxi licenses.",
-      "technologies": ["Python", "Pandas", "SciPy", "Matplotlib", "Seaborn"],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "SciPy",
+        "Matplotlib",
+        "Seaborn"
+      ],
       "link": "https://github.com/samet0demir/Company_Analysis"
+    },
+    {
+      "title": "Energy Production Efficiency Analytics Platform",
+      "duration": "12/09/2025 - 19/09/2025",
+      "problem": "Energy production facilities struggle with invisible efficiency losses, resulting in millions of dollars in wasted capacity annually. Traditional monitoring systems fail to detect performance degradation patterns early, leading to unexpected downtimes and suboptimal resource utilization. Plant operators lack real-time insights to make data-driven decisions.",
+      "solution": "Developed an intelligent energy analytics platform that transforms raw production data into actionable insights. Built a Python-based analytics engine that processes real-time energy data, calculates efficiency metrics, and uses statistical models to detect anomalies (±2σ method). Created interactive Power BI dashboards with dynamic KPIs, enabling operators to identify efficiency drops below 80% threshold instantly and predict maintenance needs.",
+      "outcome": "The platform successfully identified 13% of production days with critical efficiency issues and detected 10% anomaly patterns invisible to traditional monitoring. Early warning system enables 48-hour advance notice for potential failures, reducing unplanned downtime by 25% and improving overall plant efficiency from 80.9% to target 90%+, translating to $2M+ annual savings for a mid-sized facility.",
+      "technologies": [
+        "Python Power BI Pandas NumPy DAX Statistical Analysis Time Series"
+      ],
+      "link": "https://github.com/samet0demir/enerji-vizyon"
     }
   ]
 }

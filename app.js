@@ -156,15 +156,6 @@ fetch('projects.json')
             </div>
         `;
     });
-    .catch(error => {
-        console.error('Error loading projects:', error);
-        const projectList = document.getElementById('project-list');
-        projectList.innerHTML = `
-            <div class="error-message">
-                <p>Sorry, there was an error loading the projects. Please try refreshing the page.</p>
-            </div>
-        `;
-    });
 
 // Fetch and load certificates dynamically
 fetch('certificates.json')

@@ -106,7 +106,8 @@ fetch('projects.json')
     .then(data => {
         const projectList = document.getElementById('project-list');
         projectList.innerHTML = ""; // Clear the list
-        data.forEach((project, index) => {
+        const projects = data.projects;
+        projects.forEach((project, index) => {
             const projectCard = document.createElement('div');
             projectCard.className = 'project-card';
             projectCard.style.animationDelay = `${index * 0.1}s`;
@@ -146,6 +147,15 @@ fetch('projects.json')
             });
         });
     })
+    .catch(error => {
+        console.error('Error loading projects:', error);
+        const projectList = document.getElementById('project-list');
+        projectList.innerHTML = `
+            <div class="error-message">
+                <p>Sorry, there was an error loading the projects. Please try refreshing the page.</p>
+            </div>
+        `;
+    });
     .catch(error => {
         console.error('Error loading projects:', error);
         const projectList = document.getElementById('project-list');

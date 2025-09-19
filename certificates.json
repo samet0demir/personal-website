@@ -1,14 +1,26 @@
 [
     {
-      "title": "Python Programming from Beginner to Advanced Level (40+ hours)",
+      "title": {
+        "tr": "Python Programlama Başlangıçtan İleri Seviyeye (40+ saat)",
+        "en": "Python Programming from Beginner to Advanced Level (40+ hours)"
+      },
       "issuer": "Udemy",
       "date": "17/06/2023",
-      "description": "Gained foundational programming skills and practical experience in Python."
+      "description": {
+        "tr": "Python'da temel programlama becerileri ve pratik deneyim kazandım.",
+        "en": "Gained foundational programming skills and practical experience in Python."
+      }
     },
     {
-      "title": "Python A-Z™: Data Science and Machine Learning (50 hours)",
+      "title": {
+        "tr": "Python A-Z™: Veri Bilimi ve Makine Öğrenmesi (50 saat)",
+        "en": "Python A-Z™: Data Science and Machine Learning (50 hours)"
+      },
       "issuer": "Udemy",
       "date": "11/05/2024",
-      "description": "Learned core concepts of data science and implemented machine learning models."
+      "description": {
+        "tr": "Veri biliminin temel kavramlarını öğrendim ve makine öğrenmesi modelleri uyguladım.",
+        "en": "Learned core concepts of data science and implemented machine learning models."
+      }
     }
 ]

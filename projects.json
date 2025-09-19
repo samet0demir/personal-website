@@ -1,6 +1,17 @@
 {
   "projects": [
     {
+      "title": "Energy Production Efficiency Analytics Platform",
+      "duration": "12/09/2025 - 19/09/2025",
+      "problem": "Energy production facilities struggle with invisible efficiency losses, resulting in millions of dollars in wasted capacity annually. Traditional monitoring systems fail to detect performance degradation patterns early, leading to unexpected downtimes and suboptimal resource utilization. Plant operators lack real-time insights to make data-driven decisions.",
+      "solution": "Developed an intelligent energy analytics platform that transforms raw production data into actionable insights. Built a Python-based analytics engine that processes real-time energy data, calculates efficiency metrics, and uses statistical models to detect anomalies (±2σ method). Created interactive Power BI dashboards with dynamic KPIs, enabling operators to identify efficiency drops below 80% threshold instantly and predict maintenance needs.",
+      "outcome": "The platform successfully identified 13% of production days with critical efficiency issues and detected 10% anomaly patterns invisible to traditional monitoring. Early warning system enables 48-hour advance notice for potential failures, reducing unplanned downtime by 25% and improving overall plant efficiency from 80.9% to target 90%+, translating to $2M+ annual savings for a mid-sized facility.",
+      "technologies": [
+        "Python Power BI Pandas NumPy DAX Statistical Analysis Time Series"
+      ],
+      "link": "https://github.com/samet0demir/enerji-vizyon"
+    },
+    {
       "title": "Machine Learning-Based Earthquake Loss Estimation for Avcılar District",
       "duration": "08/03/2025 – 21/06/2025",
       "problem": "Ahead of the anticipated major Marmara earthquake, existing risk maps are often too broad, remaining at the city or district level. This makes it difficult for local response teams to allocate resources to the most critical neighborhoods. A data-driven, quantitative prioritization system at the neighborhood level is missing.",
@@ -44,17 +55,6 @@
         "Seaborn"
       ],
       "link": "https://github.com/samet0demir/Company_Analysis"
-    },
-    {
-      "title": "Energy Production Efficiency Analytics Platform",
-      "duration": "12/09/2025 - 19/09/2025",
-      "problem": "Energy production facilities struggle with invisible efficiency losses, resulting in millions of dollars in wasted capacity annually. Traditional monitoring systems fail to detect performance degradation patterns early, leading to unexpected downtimes and suboptimal resource utilization. Plant operators lack real-time insights to make data-driven decisions.",
-      "solution": "Developed an intelligent energy analytics platform that transforms raw production data into actionable insights. Built a Python-based analytics engine that processes real-time energy data, calculates efficiency metrics, and uses statistical models to detect anomalies (±2σ method). Created interactive Power BI dashboards with dynamic KPIs, enabling operators to identify efficiency drops below 80% threshold instantly and predict maintenance needs.",
-      "outcome": "The platform successfully identified 13% of production days with critical efficiency issues and detected 10% anomaly patterns invisible to traditional monitoring. Early warning system enables 48-hour advance notice for potential failures, reducing unplanned downtime by 25% and improving overall plant efficiency from 80.9% to target 90%+, translating to $2M+ annual savings for a mid-sized facility.",
-      "technologies": [
-        "Python Power BI Pandas NumPy DAX Statistical Analysis Time Series"
-      ],
-      "link": "https://github.com/samet0demir/enerji-vizyon"
     }
   ]
 }

@@ -6,20 +6,17 @@
         "en": "Energy Production Efficiency Analytics Platform"
       },
       "duration": "12/09/2025 - 19/09/2025",
-      "problem": {
-        "tr": "Enerji üretim tesisleri, yıllık milyonlarca dolar kapasiteli kaybıyla sonuçlanan görünmez verimlilik kayıplarıyla mücadele ediyor. Geleneksel izleme sistemleri, performans düşüş paternlerini erken tespit etmekte başarısız olup beklenmedik duruş sürelerine ve optimal olmayan kaynak kullanımına yol açıyor. Tesis operatörleri, veri odaklı kararlar almak için gerçek zamanlı içgörülere sahip değil.",
-        "en": "Energy production facilities struggle with invisible efficiency losses, resulting in millions of dollars in wasted capacity annually. Traditional monitoring systems fail to detect performance degradation patterns early, leading to unexpected downtimes and suboptimal resource utilization. Plant operators lack real-time insights to make data-driven decisions."
-      },
-      "solution": {
-        "tr": "Ham üretim verisini eyleme dönüştürülebilir içgörülere çeviren akıllı bir enerji analitik platformu geliştirdim. Gerçek zamanlı enerji verisini işleyen, verimlilik metriklerini hesaplayan ve anomalileri tespit etmek için istatistiksel modeller kullanan (±2σ yöntemi) Python tabanlı bir analitik motoru oluşturdum. Operatörlerin %80 eşiğin altındaki verimlilik düşüşlerini anında tespit etmesini ve bakım ihtiyaçlarını öngörmesini sağlayan dinamik KPI'lar ile interaktif Power BI dashboardları oluşturdum.",
-        "en": "Developed an intelligent energy analytics platform that transforms raw production data into actionable insights. Built a Python-based analytics engine that processes real-time energy data, calculates efficiency metrics, and uses statistical models to detect anomalies (±2σ method). Created interactive Power BI dashboards with dynamic KPIs, enabling operators to identify efficiency drops below 80% threshold instantly and predict maintenance needs."
-      },
-      "outcome": {
-        "tr": "Platform, üretim günlerinin %13'ünde kritik verimlilik sorunlarını başarıyla tespit etti ve geleneksel izleme sistemlerinde görünmeyen %10 anomali paternini algıladı. Erken uyarı sistemi, potansiyel arızalar için 48 saatlik önceden bildirim sağlayarak planlanmamış duruş süresini %25 azaltıyor ve genel tesis verimliliğini %80.9'dan hedeflenen %90+'ya çıkararak orta ölçekli bir tesis için yıllık 2 milyon $+ tasarruf sağlıyor.",
-        "en": "The platform successfully identified 13% of production days with critical efficiency issues and detected 10% anomaly patterns invisible to traditional monitoring. Early warning system enables 48-hour advance notice for potential failures, reducing unplanned downtime by 25% and improving overall plant efficiency from 80.9% to target 90%+, translating to $2M+ annual savings for a mid-sized facility."
-      },
+      "problem": "Enerji üretim tesisleri, verimlilik kayıplarını zamanında tespit edememekten dolayı kapasitelerinin altında çalışıyor. Excel tabanlı manuel raporlama sistemleri, trendleri ve anomalileri görmeyi zorlaştırıyor. Operatörler, hızlı karar almak için görsel ve anlaşılır dashboardlara ihtiyaç duyuyor.",
+      "solution": "90 günlük sentetik enerji üretim verisi üzerinde çalışan bir analiz sistemi geliştirdim. Python ile verimlilik hesaplamaları yapan, %80 eşik değerinin altındaki günleri tespit eden ve istatistiksel anomalileri (±2σ metodu) belirleyen bir analiz motoru oluşturdum. Power BI için hazır veri seti ve detaylı dashboard tasarım kılavuzu hazırladım.",
+      "outcome": "Sistem, test verisinde %13.3 oranında düşük verimlilik günlerini ve %10 oranında anomali tespit etti. Analiz süreci <1 saniyede tamamlanıyor. Power BI'da uygulandığında, operatörlerin verimlilik trendlerini takip etmesini ve kritik durumları hızlıca görmesini sağlayacak bir altyapı oluşturuldu.",
       "technologies": [
-        "Python", "Power BI", "Pandas", "NumPy", "DAX", "Statistical Analysis", "Time Series"
+        "Python",
+        "Power BI",
+        "Pandas",
+        "NumPy",
+        "DAX",
+        "Statistical Analysis",
+        "Time Series"
       ],
       "link": "https://github.com/samet0demir/enerji-vizyon"
     },

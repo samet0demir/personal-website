@@ -1,74 +1,5 @@
-// Language management
-function initializeLanguage() {
-    const savedLanguage = localStorage.getItem('language') || 'tr';
-    const languageToggle = document.getElementById('language-toggle');
 
-    // Apply saved language
-    switchLanguage(savedLanguage);
-    updateLanguageIcon(savedLanguage);
 
-    // Language toggle event listener
-    if (languageToggle) {
-        languageToggle.addEventListener('click', () => {
-            const currentLanguage = document.documentElement.getAttribute('lang');
-            const newLanguage = currentLanguage === 'tr' ? 'en' : 'tr';
-
-            switchLanguage(newLanguage);
-            localStorage.setItem('language', newLanguage);
-            updateLanguageIcon(newLanguage);
-        });
-    }
-}
-
-function switchLanguage(language) {
-    document.documentElement.setAttribute('lang', language);
-    currentLanguage = language;
-
-    // Update all elements with data attributes
-    document.querySelectorAll('[data-tr][data-en]').forEach(element => {
-        const newText = element.getAttribute(`data-${language}`);
-        if (newText) {
-            // Handle HTML content in contact section
-            if (element.innerHTML.includes('<a')) {
-                element.innerHTML = newText;
-            } else {
-                element.textContent = newText;
-            }
-        }
-    });
-
-    // Update dynamic content
-    loadProjects(language);
-    loadCertificates(language);
-
-    // Update meta tags
-    const metaDescription = document.querySelector('meta[name="description"]');
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    const ogDescription = document.querySelector('meta[property="og:description"]');
-    const title = document.querySelector('title');
-
-    if (language === 'tr') {
-        if (metaDescription) metaDescription.setAttribute('content', 'Samet Demir - Yapay Zeka Uzmanı, Veri Bilimci ve Problem Çözücü. Yenilikçi yapay zeka ve veri bilimi projelerimi sergileyen portföyümü keşfedin.');
-        if (ogTitle) ogTitle.setAttribute('content', 'Samet Demir | Yapay Zeka & Veri Bilimi Portföyü');
-        if (ogDescription) ogDescription.setAttribute('content', 'Yapay Zeka Uzmanı, Veri Bilimci ve Problem Çözücü');
-        if (title) title.textContent = 'Samet Demir | Yapay Zeka & Veri Bilimi Portföyü';
-    } else {
-        if (metaDescription) metaDescription.setAttribute('content', 'Samet Demir - AI Enthusiast, Data Scientist, and Problem Solver. Explore my portfolio showcasing innovative AI and data science projects.');
-        if (ogTitle) ogTitle.setAttribute('content', 'Samet Demir | AI & Data Science Portfolio');
-        if (ogDescription) ogDescription.setAttribute('content', 'AI Enthusiast, Data Scientist, and Problem Solver');
-        if (title) title.textContent = 'Samet Demir | AI & Data Science Portfolio';
-    }
-}
-
-function updateLanguageIcon(language) {
-    const languageToggle = document.getElementById('language-toggle');
-    if (languageToggle) {
-        languageToggle.textContent = language === 'tr' ? '🇺🇸' : '🇹🇷';
-        languageToggle.setAttribute('aria-label',
-            language === 'tr' ? 'Switch to English' : 'Switch to Turkish'
-        );
-    }
-}
 
 // Theme management
 function initializeTheme() {
@@ -207,10 +138,9 @@ document.querySelectorAll('section').forEach(section => {
 // Global variables for dynamic content
 let projectsData = null;
 let certificatesData = null;
-let currentLanguage = 'tr';
 
 // Fetch and load projects as case studies
-function loadProjects(language = 'tr') {
+function loadProjects() {
     if (!projectsData) return;
 
     const projectList = document.getElementById('project-list');
@@ -223,29 +153,29 @@ function loadProjects(language = 'tr') {
 
         const technologies = project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('');
 
-        const title = typeof project.title === 'object' ? project.title[language] : project.title;
-        const problem = typeof project.problem === 'object' ? project.problem[language] : project.problem;
-        const solution = typeof project.solution === 'object' ? project.solution[language] : project.solution;
-        const outcome = typeof project.outcome === 'object' ? project.outcome[language] : project.outcome;
+        const title = typeof project.title === 'object' ? project.title.tr : project.title;
+        const problem = typeof project.problem === 'object' ? project.problem.tr : project.problem;
+        const solution = typeof project.solution === 'object' ? project.solution.tr : project.solution;
+        const outcome = typeof project.outcome === 'object' ? project.outcome.tr : project.outcome;
 
         projectCard.innerHTML = `
             <h3>${title}</h3>
             <p class="project-duration">${project.duration}</p>
 
-            <h4 data-tr="Problem" data-en="Problem">${language === 'tr' ? 'Problem' : 'Problem'}</h4>
+            <h4>Problem</h4>
             <p>${problem}</p>
 
-            <h4 data-tr="Çözüm" data-en="Solution">${language === 'tr' ? 'Çözüm' : 'Solution'}</h4>
+            <h4>Çözüm</h4>
             <p>${solution}</p>
 
-            <h4 data-tr="Sonuç" data-en="Outcome">${language === 'tr' ? 'Sonuç' : 'Outcome'}</h4>
+            <h4>Sonuç</h4>
             <p>${outcome}</p>
 
             <div class="project-footer">
                 <div class="technologies">
-                    <strong data-tr="Teknolojiler:" data-en="Technologies:">${language === 'tr' ? 'Teknolojiler:' : 'Technologies:'}</strong> ${technologies}
+                    <strong>Teknolojiler:</strong> ${technologies}
                 </div>
-                ${project.link && project.link !== "-" ? `<a href="${project.link}" target="_blank" class="project-link" data-tr="GitHub'da Görüntüle" data-en="View on GitHub">${language === 'tr' ? 'GitHub\'da Görüntüle' : 'View on GitHub'}</a>` : ""}
+                ${project.link && project.link !== "-" ? `<a href="${project.link}" target="_blank" class="project-link">GitHub'da Görüntüle</a>` : ""}
             </div>
         `;
         projectList.appendChild(projectCard);
@@ -271,7 +201,7 @@ fetch('projects.json')
     })
     .then(data => {
         projectsData = data;
-        loadProjects(currentLanguage);
+        loadProjects();
     })
     .catch(error => {
         console.error('Error loading projects:', error);
@@ -284,7 +214,7 @@ fetch('projects.json')
     });
 
 // Load certificates function
-function loadCertificates(language = 'tr') {
+function loadCertificates() {
     if (!certificatesData) return;
 
     const certificateList = document.getElementById('certificate-list');
@@ -294,12 +224,12 @@ function loadCertificates(language = 'tr') {
         const listItem = document.createElement('li');
         listItem.style.animationDelay = `${index * 0.1}s`;
 
-        const title = typeof cert.title === 'object' ? cert.title[language] : cert.title;
-        const description = typeof cert.description === 'object' ? cert.description[language] : cert.description;
+        const title = typeof cert.title === 'object' ? cert.title.tr : cert.title;
+        const description = typeof cert.description === 'object' ? cert.description.tr : cert.description;
 
         listItem.innerHTML = `
             <h3>${title}</h3>
-            <p><strong data-tr="Kurum:" data-en="Issuer:">${language === 'tr' ? 'Kurum:' : 'Issuer:'}</strong> ${cert.issuer} | <strong data-tr="Tarih:" data-en="Date:">${language === 'tr' ? 'Tarih:' : 'Date:'}</strong> ${cert.date}</p>
+            <p><strong>Kurum:</strong> ${cert.issuer} | <strong>Tarih:</strong> ${cert.date}</p>
             <p>${description}</p>
         `;
         certificateList.appendChild(listItem);
@@ -316,7 +246,7 @@ fetch('certificates.json')
     })
     .then(data => {
         certificatesData = data;
-        loadCertificates(currentLanguage);
+        loadCertificates();
     })
     .catch(error => {
         console.error('Error loading certificates:', error);
@@ -330,8 +260,7 @@ fetch('certificates.json')
 
 // Dynamically update footer year
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize language and theme
-    initializeLanguage();
+    // Initialize theme
     initializeTheme();
 
     const footerYear = document.getElementById('footer-year');

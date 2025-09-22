@@ -1,10 +1,7 @@
 {
   "projects": [
     {
-      "title": {
-        "tr": "Enerji Üretim Verimliliği Analitik Platformu",
-        "en": "Energy Production Efficiency Analytics Platform"
-      },
+      "title": "Enerji Üretim Performans İzleme Sistemi",
       "duration": "12/09/2025 - 19/09/2025",
       "problem": "Enerji üretim tesisleri, verimlilik kayıplarını zamanında tespit edememekten dolayı kapasitelerinin altında çalışıyor. Excel tabanlı manuel raporlama sistemleri, trendleri ve anomalileri görmeyi zorlaştırıyor. Operatörler, hızlı karar almak için görsel ve anlaşılır dashboardlara ihtiyaç duyuyor.",
       "solution": "90 günlük sentetik enerji üretim verisi üzerinde çalışan bir analiz sistemi geliştirdim. Python ile verimlilik hesaplamaları yapan, %80 eşik değerinin altındaki günleri tespit eden ve istatistiksel anomalileri (±2σ metodu) belirleyen bir analiz motoru oluşturdum. Power BI için hazır veri seti ve detaylı dashboard tasarım kılavuzu hazırladım.",
@@ -21,7 +18,7 @@
       "link": "https://github.com/samet0demir/enerji-vizyon"
     },
     {
-      "title": "Makine Öğrenimi Tabanlı Avcılar İlçesi Deprem Kayıp Tahmini",
+      "title": "İBB Deprem Senaryosu Risk Faktörü Analizi",
       "duration": "08/03/2025 – 21/06/2025",
       "problem": "İBB'nin Avcılar için hazırladığı 7.5 büyüklüğündeki deprem senaryosunda, çok sayıda demografik, yapısal ve altyapı faktörü bulunuyor. Ancak bu faktörlerin can kaybı riski üzerindeki göreli önemleri ve etkileşimleri net değil. Policy makers hangi alanlara öncelik vermesi gerektiği konusunda veri odaklı rehberliğe ihtiyaç duyuyor.\n",
       "solution": "10 mahalle verisi üzerinde interpretable machine learning teknikleri uygulayarak faktör önem analizi yaptım. Python ile geliştirdiğim sistem, Lasso regresyon ve Random Forest modellerini kullanarak belediyenin senaryo verilerindeki en kritik risk faktörlerini belirledi. Domain expertise ile feature engineering yaparak, risk değerlendirmesinde hangi parametrelerin ön plana çıktığını analiz ettim.\n",
@@ -38,9 +35,9 @@
     {
       "title": "Reklam Tıklanma Oranı (CTR) Tahmini",
       "duration": "27/11/2024 – 03/12/2024",
-      "problem": "Bir dijital pazarlama ajansı, hangi kullanıcıların bir reklama tıklama olasılığının daha yüksek olduğunu belirleyerek reklam bütçesini optimize etmek istiyordu. Rastgele reklam yerleşimleri düşük etkileşim ve boşa harcanan reklam giderlerine yol açıyordu.",
-      "solution": "Kullanıcı demografik verileri, gezinme geçmişi ve reklam özelliklerine dayalı olarak bir kullanıcının reklama tıklama olasılığını tahmin etmek için bir makine öğrenimi modeli (Lojistik Regresyon) geliştirdim. Anlamlı öngörücüler oluşturmak için kapsamlı özellik mühendisliği uyguladım.",
-      "outcome": "Model yüksek doğruluk elde ederek ajansın tıklama olasılığı yüksek kullanıcılara hedefleme yapmasını sağladı. Bu da CTR’de %15 artış ve reklam bütçesinin daha verimli kullanılmasına yol açtı.",
+      "problem": "E-ticaret ve dijital reklamcılık sektöründe, kullanıcıların reklam tıklama davranışlarını anlamak kritik öneme sahiptir. Bu projede, kullanıcı demografik bilgileri, ürün kategorileri ve kampanya verilerini içeren bir dataset kullanarak reklam tıklama olasılığını tahmin etmeyi hedefledim.",
+      "solution": "Kullanıcı demografik verileri, ürün kategorileri ve kampanya bilgilerini analiz ederek makine öğrenmesi tabanlı bir tahmin sistemi geliştirdim. Veri ön işleme, eksik değer doldurma ve özellik mühendisliği uyguladım. Logistic Regression ve Random Forest modellerini karşılaştırarak en optimal algoritmayı belirledim. SMOTE tekniği ile veri dengesizliği problemini çözdüm.",
+      "outcome": "Random Forest modeli %93.22 doğruluk oranı elde etti ve Logistic Regression'a (%56.57) kıyasla önemli ölçüde üstün performans gösterdi. Model, user_group_id'nin en önemli özellik olduğunu ortaya koydu. Sistem, hangi kullanıcı segmentlerinin reklama tıklama olasılığının yüksek olduğunu başarıyla tahmin ederek hedefli reklam stratejileri geliştirmeyi mümkün kıldı.",
       "technologies": [
         "Python",
         "Scikit-learn",

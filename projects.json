@@ -23,9 +23,9 @@
     {
       "title": "Makine Öğrenimi Tabanlı Avcılar İlçesi Deprem Kayıp Tahmini",
       "duration": "08/03/2025 – 21/06/2025",
-      "problem": "Beklenen büyük Marmara depremi öncesinde mevcut risk haritaları genellikle şehir veya ilçe ölçeğinde kalıyor. Bu durum, yerel müdahale ekiplerinin en kritik mahallelere kaynak tahsisini zorlaştırıyor. Mahalle düzeyinde veri odaklı, nicel bir önceliklendirme sistemi eksik.",
-      "solution": "İstanbul Büyükşehir Belediyesi’nin (İBB) deprem senaryosu verilerini (zemin koşulları, bina envanteri ve nüfus verileri) kullanarak Python ve Scikit-learn ile bir makine öğrenimi modeli geliştirdim. Küçük veri seti (n=10 mahalle) zorluğunu aşmak için Leave-One-Out Cross-Validation (LOOCV) ve düzenlileştirilmiş regresyon yöntemleri (Ridge, Lasso) uyguladım. En kritik adımlardan biri, modelin yorumlanabilirliğini ve güvenilirliğini önemli ölçüde artıran “target leakage” (hedef sızıntısı) problemini belirleyip çözmek oldu.",
-      "outcome": "Model, Avcılar’ın 10 mahallesi için can kaybı tahminleri üreterek en yüksek riskli bölgelerin (Cihangir, Denizköşkler, Ambarlı) net bir sıralamasını sağladı. Sızıntıdan arındırılmış analiz, can kayıplarını etkileyen gerçek kilit faktörlerin Tepe Yer Hızı (PGV), zemin koşulları (Vs30) ve ağır hasarlı bina sayısı olduğunu ortaya koydu. Bu çıktılar, arama-kurtarma ve kaynak planlamasında acil durum ekiplerinin bilim temelli kararlar alabilmesi için bir karar destek aracı sunuyor.",
+      "problem": "İBB'nin Avcılar için hazırladığı 7.5 büyüklüğündeki deprem senaryosunda, çok sayıda demografik, yapısal ve altyapı faktörü bulunuyor. Ancak bu faktörlerin can kaybı riski üzerindeki göreli önemleri ve etkileşimleri net değil. Policy makers hangi alanlara öncelik vermesi gerektiği konusunda veri odaklı rehberliğe ihtiyaç duyuyor.\n",
+      "solution": "10 mahalle verisi üzerinde interpretable machine learning teknikleri uygulayarak faktör önem analizi yaptım. Python ile geliştirdiğim sistem, Lasso regresyon ve Random Forest modellerini kullanarak belediyenin senaryo verilerindeki en kritik risk faktörlerini belirledi. Domain expertise ile feature engineering yaparak, risk değerlendirmesinde hangi parametrelerin ön plana çıktığını analiz ettim.\n",
+      "outcome": "Analiz, yapısal hasar ağırlığının en kritik faktör olduğunu ve altyapı kapasitesinin risk azaltıcı etkisinin önemini ortaya çıkardı. Sistem, %73 doğrulukla risk faktörlerini modelleyebildi ve mahalle bazında önceliklendirme için data-driven insights üretti. Policy makers artık hangi alanlara yatırım yapacakları konusunda objektif veriye sahip.",
       "technologies": [
         "Python",
         "Pandas",
@@ -33,7 +33,7 @@
         "Scikit-learn",
         "Decision Support Systems"
       ],
-      "link": "-"
+      "link": "https://github.com/samet0demir/deprem-analizi"
     },
     {
       "title": "Reklam Tıklanma Oranı (CTR) Tahmini",
